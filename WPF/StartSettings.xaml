@@ -1,0 +1,38 @@
+﻿<Window x:Class="WPF.StartSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Settings" Height="365" Width="340">
+    <Grid>
+        <Label Content="Settings" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Height="44" Width="98" Margin="117,15,117,275" />
+        <StackPanel Margin="102,63,76,246">
+            <TextBlock Text="Choose team gender:" Height="21"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" x:Name="pnlTeamGender" Margin="102,87,76,223">
+            <RadioButton x:Name="rbMale" Content="Male" Margin="0,1,0,-1"/>
+            <RadioButton x:Name="rbFemale" Content="Female" Margin="15,1,0,-1"/>
+        </StackPanel>
+        <StackPanel Margin="102,118,76,191">
+            <TextBlock Text="Choose language:" Height="21"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" x:Name="pnlLanguage" Margin="102,143,76,166">
+            <RadioButton x:Name="rbEnglish" Content="English"/>
+            <RadioButton x:Name="rbCroatian" Content="Croatian" Margin="10,0,0,0"/>
+        </StackPanel>
+        <StackPanel Margin="102,172,99,96">
+            <TextBlock Text="Resolution" Margin="2,0,-2,0"/>
+        </StackPanel>
+        <ComboBox x:Name="cbResolutions" Margin="102,198,99,106" SelectionChanged="cbResolution_SelectionChanged" SelectedValuePath="Content">
+            <ComboBox.Items>
+                <ComboBoxItem Content="Fullscreen"></ComboBoxItem>
+                <ComboBoxItem Content="1280x720"></ComboBoxItem>
+                <ComboBoxItem Content="1408x792"></ComboBoxItem>
+                <ComboBoxItem Content="1600x900"></ComboBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
+        <Button x:Name="btnSave" Margin="102,243,99,50" Click="btnSave_Click">Save</Button>
+    </Grid>
+</Window>

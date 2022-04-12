@@ -1,0 +1,45 @@
+﻿<Window x:Class="WPF.TeamStats"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        xmlns:lang ="clr-namespace:WPF.Properties"
+        mc:Ignorable="d"
+        Title="TeamStats" Height="330" Width="290">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="70*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static lang:Resources.tbTeam}" FontSize="18" Margin="10,0,0,0" ></TextBlock>
+        <TextBlock x:Name="tbTeam" Grid.Row="0" Grid.Column="1" Text="random" FontSize="18"></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static lang:Resources.tbFifaCode}" FontSize="18" Margin="10,0,0,0"></TextBlock>
+        <TextBlock x:Name="tbFifaCode" Grid.Row="1" Grid.Column="1" Text="random" FontSize="18"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static lang:Resources.tbGamesPlayed}" FontSize="18" Margin="10,0,0,0"></TextBlock>
+        <TextBlock x:Name="tbGamesPlayed" Grid.Row="2" Grid.Column="1" Text="1" FontSize="18"></TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="{x:Static lang:Resources.tbWins}" FontSize="18" Margin="10,0,0,0"></TextBlock>
+        <TextBlock x:Name="tbWins" Grid.Row="3" Grid.Column="1" Text="2" FontSize="18"></TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="{x:Static lang:Resources.tbLosses}" FontSize="18" Margin="10,0,0,0"></TextBlock>
+        <TextBlock x:Name="tbLosses" Grid.Row="4" Grid.Column="1" Text="3" FontSize="18"></TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="{x:Static lang:Resources.tbDraws}" FontSize="18" Margin="10,0,0,0"></TextBlock>
+        <TextBlock x:Name="tbDraws" Grid.Row="5" Grid.Column="1" Text="0" FontSize="18"></TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="{x:Static lang:Resources.tbScored}" FontSize="18" Margin="10,0,0,0"></TextBlock>
+        <TextBlock x:Name="tbScored" Grid.Row="6" Grid.Column="1" Text="5" FontSize="18"></TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="{x:Static lang:Resources.tbReceived}" FontSize="18" Margin="10,0,0,0"></TextBlock>
+        <TextBlock x:Name="tbReceived" Grid.Row="7" Grid.Column="1" Text="6" FontSize="18"></TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="0" Text="{x:Static lang:Resources.tbDifference}" FontSize="18" Margin="10,0,0,0"></TextBlock>
+        <TextBlock x:Name="tbDifference" Grid.Row="8" Grid.Column="1" Text="7" FontSize="18"></TextBlock>
+    </Grid>
+</Window>

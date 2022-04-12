@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF.PlayerDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        xmlns:lang ="clr-namespace:WPF.Properties"
+        mc:Ignorable="d"
+        Title="PlayerDetails" Height="350" Width="330">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="94*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static lang:Resources.tbPicture}" FontSize="18" Margin="10,11,0,11" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Width="59" ></TextBlock>
+        <Image x:Name="imgPlayer" Grid.Row="0" Grid.Column="1" Source="/Images/playerDefault.jpg" HorizontalAlignment="Left" Width="46"></Image>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static lang:Resources.tbName}" FontSize="18" Margin="10,11,0,11" VerticalAlignment="Center" Height="24" ></TextBlock>
+        <TextBlock x:Name="tbName" Grid.Row="1" Grid.Column="1" Text="random" FontSize="18" VerticalAlignment="Center" Height="24" Margin="0,11"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static lang:Resources.tbNumber}" FontSize="18" Margin="10,11,0,11" VerticalAlignment="Center" Height="24"></TextBlock>
+        <TextBlock x:Name="tbNumber" Grid.Row="2" Grid.Column="1" Text="2" FontSize="18" VerticalAlignment="Center" Height="24" Margin="0,11"></TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="{x:Static lang:Resources.tbPosition}" FontSize="18" Margin="10,11,0,11" VerticalAlignment="Center" Height="24"></TextBlock>
+        <TextBlock x:Name="tbPosition" Grid.Row="3" Grid.Column="1" Text="true" FontSize="18" VerticalAlignment="Center" Height="24" Margin="0,11"></TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="{x:Static lang:Resources.tbCaptain}" FontSize="18" Margin="10,10,0,11" VerticalAlignment="Center" Height="24"></TextBlock>
+        <TextBlock x:Name="tbCaptain" Grid.Row="4" Grid.Column="1" Text="true" FontSize="18" VerticalAlignment="Center" Height="24" Margin="0,10,0,11"></TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="{x:Static lang:Resources.tbGoals}" FontSize="18" Margin="10,11,0,10" VerticalAlignment="Center" Height="24"></TextBlock>
+        <TextBlock x:Name="tbGoals" Grid.Row="5" Grid.Column="1" Text="1" FontSize="18" VerticalAlignment="Center" Height="24" Margin="0,11,0,10"></TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="{x:Static lang:Resources.tbYellowCards}" FontSize="18" Margin="10,10,0,11" VerticalAlignment="Center" Height="24"></TextBlock>
+        <TextBlock x:Name="tbYellowCards" Grid.Row="6" Grid.Column="1" Text="1" FontSize="18" VerticalAlignment="Center" Height="24" Margin="0,10,0,11"></TextBlock>
+    </Grid>
+</Window>
